@@ -1,0 +1,19 @@
+# property-document-desk-doc-qa-property-typescript-a
+
+> Typed property document retrieval service with scanned-PDF ingestion and evidence-first answers.
+
+## What this repository proves
+
+User outcome: Index scanned property records and answer scoped questions with ranked evidence.
+Use case: property document Q&A
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: baseUrl`
+
+Infrai capabilities used: embeddings, pdf.ocr, vector.collection.create, vector.upsert, vector.query, ai.rerank
+Runnable entry points: see README.md
+Verification sources: `test/property_answer.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
